@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+  font-family: 'Poppins',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aside{
+  position: relative;
+  width: 160px ;
+  height: 100vh;
+  background-color: #DB6400;
+}
+.logo{
+  width: 100%;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text{
+  font-family: 'Pacifico';
+  font-size: 18px;
+  color:rgb(228, 228, 228);
+  padding: 0;
+  margin: 0;
+}
+
+.fa-code{
+  font-size: 18px;
+  margin-left: 5px;
+  color: rgb(228, 228, 228);
+}
+
+.container-count{
+  background-color: #c25f0d;
+  overflow-y: auto;
+  position: absolute;
+  top: 80px;
+  height:65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter{
+  margin-top: 14px;
+  width: 90%;
+  height: 33px;
+  display: flex;
+  
+}
+
+
+.spaces{
+  left: 5%;
+  position: absolute;
+  bottom: 40px;
+}
+
+.words{
+  left: 5%;
+  position: absolute;
+  bottom: 90px;
+}
+
+.counter-left{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: rgba(48, 141, 159, 0.99);
+}
+
+.counter-right{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background:#16697A;
+}
+
+.counter-left-spaces{
+  width: 60%;
+}
+
+.counter-right-spaces{
+  width: 40%;
+}
+
+.counter-left-words{
+  width: 60%;
+}
+
+.counter-right-words{
+  width: 40%;
+}
+
+.container-constants{
+  position: absolute;
+  width: 100%;
+  height:22% ;
+  top: 77%;
+}
+
+.write-text{
+  position: absolute;
+  top: 20px;
+  left:15% ;
+  width: 80%;
+  height: 70vh;
+  padding: 10px;
+  resize: none;
+}
+
+
+.container-buttons{
+  position: absolute;
+  top: 80vh;
+  left:15% ;
+  width: 80%;
+  height: 50px;
+}
+
+.btn{
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  color: white;
+  padding: 8px;
+  width: 120px;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn-accept{
+  right: 170px;
+  background-color: #1DA7F4;
+}
+
+.btn-cancel{
+  right: 30px;
+  background-color: #FF0000;
+}
+
+@media (max-width:1056px){
+  .write-text{
+    position: absolute;
+    top: 20px;
+    left:20% ;
+    width: 80%;
+    height: 70vh;
+    padding: 10px;
+    resize: none;
+  }
+}
+
+@media (max-width:980px){
+  .write-text{
+    width: 90%;
+    height: 30vh;
+    left: 5%;
+  }
+
+  .logo{
+    display: none;
+  }
+
+
+  .aside{
+    top:46vh ;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .container-count{
+    top: 0;
+  }
+
+  .container-constants{
+    top: 85%;
+  }
+
+  .btn{
+    position: relative;
+    left: 0;
+  }
+
+  .counter{
+    width: 85%;
+  }
+
+  .container-buttons{
+    width: 100%;
+    left: 0;
+    top: 37vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+}

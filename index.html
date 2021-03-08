@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>LetterCounter</title>
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="logo">
+        <p class="logo-text">LetterCounter</p>
+        <i class="fa fa-code"></i>
+      </div>
+      <div class="container-count"></div>
+      
+
+      <div class="container-constants">
+        <div class="counter spaces">
+          <div class="counter-left counter-left-spaces">Spaces</div>
+          <div class="counter-right counter-right-spaces">100</div>
+        </div>
+  
+        <div class="counter words">
+          <div class="counter-left counter-left-words">Words</div>
+          <div class="counter-right counter-right-words">100</div>
+        </div>
+      </div>  
+
+    </aside>
+
+    <textarea class="write-text" placeholder="Type your text here..."></textarea>
+
+    <div class="container-buttons">
+      <button class="btn btn-accept">Start to count</button>
+      <button class="btn btn-cancel">Reset</button>
+    </div>
+
+    <script type="module" src="contadorLetras.js"></script>
+  </body>
+</html>
